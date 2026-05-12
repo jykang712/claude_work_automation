@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(./venv/Scripts/python migrate_add_columns.py)",
+      "Bash(./venv/Scripts/python -c ' *)",
+      "Bash(python -c \"import ast; ast.parse\\(open\\('backend/ai_service.py'\\).read\\(\\)\\); print\\('ai_service.py OK'\\)\")",
+      "Bash(python -c \"import ast; ast.parse\\(open\\('backend/docx_converter.py'\\).read\\(\\)\\); print\\('docx_converter.py OK'\\)\")",
+      "Bash(python -c \"import ast; ast.parse\\(open\\('backend/template_utils.py'\\).read\\(\\)\\); print\\('template_utils.py OK'\\)\")",
+      "Bash(python -c \"import ast; ast.parse\\(open\\('backend/claude_service.py'\\).read\\(\\)\\); print\\('claude_service.py OK'\\)\")",
+      "Bash(python -c \"import ast; ast.parse\\(open\\('backend/main.py'\\).read\\(\\)\\); print\\('main.py OK'\\)\")",
+      "Bash(python -c \"import ast; ast.parse\\(open\\('backend/ai_service.py', encoding='utf-8'\\).read\\(\\)\\); print\\('ai_service.py OK'\\)\")",
+      "Bash(python -c \"import ast; ast.parse\\(open\\('backend/docx_converter.py', encoding='utf-8'\\).read\\(\\)\\); print\\('docx_converter.py OK'\\)\")",
+      "Bash(python -c \"import ast; ast.parse\\(open\\('backend/template_utils.py', encoding='utf-8'\\).read\\(\\)\\); print\\('template_utils.py OK'\\)\")",
+      "Bash(python -c \"import ast; ast.parse\\(open\\('backend/claude_service.py', encoding='utf-8'\\).read\\(\\)\\); print\\('claude_service.py OK'\\)\")",
+      "Bash(python -c \"import ast; ast.parse\\(open\\('backend/main.py', encoding='utf-8'\\).read\\(\\)\\); print\\('main.py OK'\\)\")"
+    ]
+  }
+}

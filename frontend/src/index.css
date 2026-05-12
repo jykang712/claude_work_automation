@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  background: #f8fafc;
+  color: #111827;
+  font-family: 'Pretendard', '맑은 고딕', 'Malgun Gothic', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 미리보기 영역 안의 placeholder 강조 */
+.preview-area .ph {
+  color: #2563eb;
+  font-weight: 600;
+}
