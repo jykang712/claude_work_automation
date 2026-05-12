@@ -1,24 +1,21 @@
 services:
-  # ── 백엔드 (FastAPI) ──────────────────────────────────────────
   - type: web
     name: ai-doc-backend
     env: python
+    plan: free
     rootDir: backend
     buildCommand: pip install -r requirements.txt
     startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
     envVars:
       - key: ANTHROPIC_API_KEY
-        sync: false          # Render 대시보드에서 직접 입력
+        sync: false
       - key: FRONTEND_ORIGIN
-        sync: false          # 프론트엔드 배포 후 해당 URL 입력 (예: https://ai-doc-frontend.onrender.com)
+        sync: false
 
-  # ── 프론트엔드 (React/Vite 정적 사이트) ──────────────────────
   - type: web
     name: ai-doc-frontend
     env: static
+    plan: free
     rootDir: frontend
     buildCommand: npm install && npm run build
-    staticPublishPath: ./dist
-    envVars:
-      - key: VITE_API_BASE
-        sync: false          # 백엔드 배포 후 해당 URL 입력 (예: https://ai-doc-backend.onrender.com)
+    staticPublishPath: dist
